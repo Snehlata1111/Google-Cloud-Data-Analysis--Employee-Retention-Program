@@ -46,6 +46,7 @@ To run this project, follow these steps (all in one go, no numbered steps): clon
 
 Clone the repository, create and activate a virtual environment, install dependencies, configure GCP credentials, and run preprocessing, training, and evaluation scripts. All commands are ready to copy-paste.
 
+
 ```bash
 # Clone Repository
 git clone https://github.com/<your-username>/GCP-Churn-Analysis.git
@@ -73,3 +74,4 @@ python src/train_model.py
 
 # Evaluate & Save Predictions
 python src/evaluate_model.py
+
