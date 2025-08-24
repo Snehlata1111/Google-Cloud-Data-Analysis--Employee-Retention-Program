@@ -42,14 +42,34 @@ The data is accessed programmatically via the `google-cloud-bigquery` Python lib
 ## Setup & Usage
 To run this project, follow these steps (all in one go, no numbered steps): clone the repository, create a virtual environment, install dependencies, configure GCP credentials, and execute scripts for preprocessing, training, and evaluation.  
 
+## Setup & Usage
+
+Clone the repository, create and activate a virtual environment, install dependencies, configure GCP credentials, and run preprocessing, training, and evaluation scripts. All commands are ready to copy-paste.
+
 ```bash
-git clone [https://github.com/<your-username>/GCP-Churn-Analysis.git](https://github.com/Snehlata1111/Google-Cloud-Data-Analysis--Employee-Retention-Program.git)
+# Clone Repository
+git clone https://github.com/<your-username>/GCP-Churn-Analysis.git
 cd GCP-Churn-Analysis
+
+# Create and Activate Virtual Environment
+# Linux/Mac
 python -m venv venv
-source venv/bin/activate       # Linux/Mac
-venv\Scripts\activate          # Windows
+source venv/bin/activate
+# Windows
+# python -m venv venv
+# venv\Scripts\activate
+
+# Install Dependencies
 pip install -r requirements.txt
+
+# Configure GCP Credentials
 export GOOGLE_APPLICATION_CREDENTIALS="path/to/your/service-account.json"
+
+# Run Preprocessing
 python src/preprocess_data.py
+
+# Train the Model
 python src/train_model.py
+
+# Evaluate & Save Predictions
 python src/evaluate_model.py
