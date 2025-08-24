@@ -15,8 +15,15 @@ The project encompasses **data extraction, preprocessing, exploratory data analy
 ## Data Source
 Datasets are stored in **Google BigQuery**:  
 
-- `tbl_hr_data`: Historical employee data including features like satisfaction level, last evaluation, number of projects, time spent at the company, average monthly hours, and salary.  
+- `tbl_hr_data`: Historical employee data including features like satisfaction level, last evaluation, number of projects, time spent at the company, average monthly hours, and salary. 
+- [`tbl_hr_data`](https://console.cloud.google.com/bigquery?project=<your-gcp-project>&d=<dataset>&t=tbl_hr_data) — Historical employee data.  
+
+ 
 - `tbl_new_employees`: New employee records used for prediction and evaluation.  
+- [`tbl_new_employees`](https://console.cloud.google.com/bigquery?project=<your-gcp-project>&d=<dataset>&t=tbl_new_employees) — New employee records.  
+
+The project connects to GCP using the [`google-cloud-bigquery`](https://pypi.org/project/google-cloud-bigquery/) Python library.
+
 
 The data is accessed programmatically via the `google-cloud-bigquery` Python library, allowing dynamic querying, preprocessing, and uploading predictions back to BigQuery.
 
@@ -36,7 +43,7 @@ The data is accessed programmatically via the `google-cloud-bigquery` Python lib
 To run this project, follow these steps (all in one go, no numbered steps): clone the repository, create a virtual environment, install dependencies, configure GCP credentials, and execute scripts for preprocessing, training, and evaluation.  
 
 ```bash
-git clone https://github.com/<your-username>/GCP-Churn-Analysis.git
+git clone [https://github.com/<your-username>/GCP-Churn-Analysis.git](https://github.com/Snehlata1111/Google-Cloud-Data-Analysis--Employee-Retention-Program.git)
 cd GCP-Churn-Analysis
 python -m venv venv
 source venv/bin/activate       # Linux/Mac
